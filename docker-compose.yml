@@ -1,0 +1,210 @@
+version: "3.11"
+
+services:
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    depends_on:
+      - prometheus
+      - elasticsearch
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - grafana-data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    restart: unless-stopped
+    
+  # --- Disabled for now: analytics stack (re-enable later) ---
+  # alertmanager:
+  #   image: prom/alertmanager:latest
+  #   container_name: alertmanager
+  #   volumes:
+  #     - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+  #   command:
+  #     - "--config.file=/etc/alertmanager/alertmanager.yml"
+  #   ports:
+  #     - "9093:9093"
+  #   restart: unless-stopped
+
+  # jupyter:
+  #   image: jupyter/datascience-notebook:latest
+  #   container_name: jupyter
+  #   ports:
+  #     - "8888:8888"
+  #   volumes:
+  #     - ./ai:/home/jovyan/work
+  #   environment:
+  #     - JUPYTER_ENABLE_LAB=yes
+  #   restart: unless-stopped
+
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama-data:/root/.ollama
+  #   restart: unless-stopped
+
+  # qdrant:
+  #   image: qdrant/qdrant:latest
+  #   container_name: qdrant
+  #   ports:
+  #     - "6333:6333"
+  #   volumes:
+  #     - qdrant-data:/qdrant/storage
+  #   restart: unless-stopped
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    restart: unless-stopped
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.13.4
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    restart: unless-stopped
+
+  security-tools-exporter:
+    build: ./exporters/security-tools-exporter
+    container_name: security-tools-exporter
+    extra_hosts:
+      - "appsec.bri.co.id:172.18.49.64"
+    environment:
+      # ─── Elasticsearch ──────────────────────────────────────────
+      - ES_HOST=http://elasticsearch:9200
+
+      # ─── DigiCert ───────────────────────────────────────────────
+      - DIGICERT_API_KEY=${DIGICERT_API_KEY:-CHANGE_ME}
+
+      # ─── Rapid7 InsightVM ───────────────────────────────────────
+      - RAPID7_API_KEY=${RAPID7_API_KEY:-CHANGE_ME}
+      - RAPID7_FULL_PULL_HOURS=6
+
+      # ─── Cortex XDR ────────────────────────────────────────────
+      - CORTEX_API_KEY=${CORTEX_API_KEY:-CHANGE_ME}
+      - CORTEX_API_KEY_ID=${CORTEX_API_KEY_ID:-CHANGE_ME}
+      - CORTEX_REGION=ultima2
+      - CORTEX_DOMAIN=id
+      #- CORTEX_TIMEOUT_SECONDS=180
+      #- CORTEX_PAGE_SIZE=100
+
+      # ─── Subdomain Discovery ───────────────────────────────────
+      - SUBDOMAIN_TARGET_DOMAIN=bri.co.id
+      - SUBDOMAIN_CERTSPOTTER_MAX_PAGES=5
+      - CERTSPOTTER_API_KEY=${CERTSPOTTER_API_KEY:-}
+      - SUBDOMAIN_OUTPUT_DIR=/data/subdomains
+
+      # ─── IP Exposure / Shodan ───────────────────────────────────
+      - SUBDOMAIN_LATEST_FILE=/data/subdomains/bri.co.id_latest.txt
+      - IP_EXPOSURE_OUTPUT_DIR=/data/ip-exposure
+      - IP_EXPOSURE_MAX_IPS=30
+      - IP_EXPOSURE_SHODAN_TIMEOUT=20
+      - SHODAN_API_KEY=${SHODAN_API_KEY:-}
+      - TARGET_ASN=133843
+
+      # ─── Entra ID (Azure AD) ───────────────────────────────────
+      - ENTRAID_TENANT_ID=${ENTRAID_TENANT_ID:-CHANGE_ME}
+      - ENTRAID_CLIENT_ID=${ENTRAID_CLIENT_ID:-CHANGE_ME}
+      - ENTRAID_CLIENT_SECRET=${ENTRAID_CLIENT_SECRET:-CHANGE_ME}
+      #- ENTRAID_TIMEOUT_SECONDS=60
+
+      # ─── Microsoft Intune ──────────────────────────────────────
+      - INTUNE_TENANT_ID=${INTUNE_TENANT_ID:-CHANGE_ME}
+      - INTUNE_CLIENT_ID=${INTUNE_CLIENT_ID:-CHANGE_ME}
+      - INTUNE_CLIENT_SECRET=${INTUNE_CLIENT_SECRET:-CHANGE_ME}
+      #- INTUNE_TIMEOUT_SECONDS=60
+
+      # ─── Palo Alto Panorama ────────────────────────────────────
+      - PANORAMA_HOST=${PANORAMA_HOST:-CHANGE_ME}
+      - PANORAMA_API_KEY=${PANORAMA_API_KEY:-CHANGE_ME}
+      #- PANORAMA_TIMEOUT_SECONDS=30
+      #- PANORAMA_VERIFY_SSL=false
+
+      # ─── BMC CMDB (Helix/Remedy) ──────────────────────────────
+      - BMC_CMDB_HOST=${BMC_CMDB_HOST:-CHANGE_ME}
+      - BMC_CMDB_USER=${BMC_CMDB_USER:-CHANGE_ME}
+      - BMC_CMDB_PASSWORD=${BMC_CMDB_PASSWORD:-CHANGE_ME}
+      #- BMC_CMDB_TIMEOUT_SECONDS=60
+      #- BMC_CMDB_VERIFY_SSL=false
+
+      # ─── IBM Maximo Asset Management ──────────────────────────
+      - IBM_MAXIMO_HOST=${IBM_MAXIMO_HOST:-CHANGE_ME}
+      - IBM_MAXIMO_USER=${IBM_MAXIMO_USER:-CHANGE_ME}
+      - IBM_MAXIMO_PASSWORD=${IBM_MAXIMO_PASSWORD:-CHANGE_ME}
+      #- IBM_MAXIMO_TIMEOUT_SECONDS=60
+      #- IBM_MAXIMO_VERIFY_SSL=false
+
+      # ─── Imperva Cloud WAF ────────────────────────────────────
+      - IMPERVA_API_ID=${IMPERVA_API_ID:-CHANGE_ME}
+      - IMPERVA_API_KEY=${IMPERVA_API_KEY:-CHANGE_ME}
+      - IMPERVA_ACCOUNT_ID=${IMPERVA_ACCOUNT_ID:-}
+      #- IMPERVA_TIMEOUT_SECONDS=30
+
+      # ─── DefectDojo ────────────────────────────────────────────
+      - DEFECTDOJO_URL=${DEFECTDOJO_URL:-CHANGE_ME}
+      - DEFECTDOJO_API_TOKEN=${DEFECTDOJO_API_TOKEN:-CHANGE_ME}
+      #- DEFECTDOJO_TIMEOUT_SECONDS=30
+      #- DEFECTDOJO_VERIFY_SSL=true
+
+      # ─── Apigee API Gateway ───────────────────────────────────
+      - APIGEE_ORG=${APIGEE_ORG:-CHANGE_ME}
+      - APIGEE_AUTH_TOKEN=${APIGEE_AUTH_TOKEN:-CHANGE_ME}
+      #- APIGEE_IS_EDGE=false
+      #- APIGEE_TIMEOUT_SECONDS=30
+
+      # ─── webMethods API Gateway ────────────────────────────────
+      - WEBMETHODS_HOST=${WEBMETHODS_HOST:-CHANGE_ME}
+      - WEBMETHODS_USER=${WEBMETHODS_USER:-CHANGE_ME}
+      - WEBMETHODS_PASSWORD=${WEBMETHODS_PASSWORD:-CHANGE_ME}
+      #- WEBMETHODS_TIMEOUT_SECONDS=30
+      #- WEBMETHODS_VERIFY_SSL=false
+
+    ports:
+      - "9105:9105"
+    volumes:
+      - ./exporters/security-tools-exporter:/app
+      - ./data/subdomains:/data/subdomains
+      - ./data/ip-exposure:/data/ip-exposure
+    restart: unless-stopped
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.100.0.0/16
+
+volumes:
+  grafana-data:
+  # ollama-data:
+  # qdrant-data:
+  es-data:
+

@@ -1,0 +1,319 @@
+{
+  "asn": "133843",
+  "asn_ips_total": 2048,
+  "asn_prefixes": [
+    "103.63.96.0/22",
+    "103.63.98.0/24",
+    "103.63.97.0/24",
+    "103.63.99.0/24",
+    "103.63.96.0/24"
+  ],
+  "asn_prefixes_total": 5,
+  "domains_with_external_cname": {
+    "api-piloting.brispot.bri.co.id": "api-piloting.brispot.gtm.bri.co.id",
+    "api-staging.brispot.bri.co.id": "api-staging.brispot.gtm.bri.co.id",
+    "api.brispot.bri.co.id": "api.brispot.gtm.bri.co.id",
+    "brifirst.bri.co.id": "brifirst.gtm.bri.co.id",
+    "brimo-gateway.bri.co.id": "brimo-gateway.gtm.bri.co.id",
+    "brimo-piloting.bri.co.id": "brimo-piloting.gtm.bri.co.id",
+    "brimo.bri.co.id": "oey5qbb.ng.impervadns.net",
+    "brique.bri.co.id": "brique.gtm.bri.co.id",
+    "brisim.bri.co.id": "brisim.gtm.bri.co.id",
+    "brispot-staging.bri.co.id": "brispot-staging.gtm.bri.co.id",
+    "brispot.bri.co.id": "brispot.gtm.bri.co.id",
+    "conjur-follower.bri.co.id": "conjur-follower.gtm.bri.co.id",
+    "developers.bri.co.id": "developers.gtm.bri.co.id",
+    "dlas.bri.co.id": "dlas.gtm.bri.co.id",
+    "dnets.bri.co.id": "dnets.gtm.bri.co.id",
+    "drss.bri.co.id": "drss.gtm.bri.co.id",
+    "ibbiz-api.bri.co.id": "ibbiz-api.gtm.bri.co.id",
+    "infolelang.bri.co.id": "infolelang.gtm.bri.co.id",
+    "jadimerchant.bri.co.id": "jadimerchant.gtm.bri.co.id",
+    "loan-piloting.bri.co.id": "loan-piloting.gtm.bri.co.id",
+    "loan-staging.bri.co.id": "loan-staging.gtm.bri.co.id",
+    "loan.bri.co.id": "loan.gtm.bri.co.id",
+    "marcomdivision.bri.co.id": "marcomdivision.gtm.bri.co.id",
+    "new-api.briconnect.bri.co.id": "new-api.briconnect.gtm.bri.co.id",
+    "new-dataviz.bri.co.id": "new-dataviz.gtm.bri.co.id",
+    "newbrilinkmobile.bri.co.id": "newbrilinkmobile.gtm.bri.co.id",
+    "partner.api.bri.co.id": "partner.api.gtm.bri.co.id",
+    "pinjaman-staging.bri.co.id": "pinjaman-staging.gtm.bri.co.id",
+    "pinjaman.bri.co.id": "pinjaman.gtm.bri.co.id",
+    "qitta-assets.bri.co.id": "46f3chx.ng.impervadns.net",
+    "qitta-piloting.bri.co.id": "dal9u49.ng.impervadns.net",
+    "qitta.bri.co.id": "89yoang.ng.impervadns.net",
+    "reservasiantrean.bri.co.id": "reservasiantrean.gtm.bri.co.id",
+    "s3.bri.co.id": "s3.gtm.bri.co.id",
+    "s3.brimo.bri.co.id": "s3.brimo.gtm.bri.co.id",
+    "sandbox.outer.api.bri.co.id": "sandbox.outer.api.gtm.bri.co.id",
+    "sandbox.partner.api.bri.co.id": "sandbox.partner.api.gtm.bri.co.id",
+    "smscontroller.bri.co.id": "smscontroller.gtm.bri.co.id",
+    "softtokenasl.bri.co.id": "softtokenasl.gtm.bri.co.id",
+    "sts.bri.co.id": "sts.gtm.bri.co.id",
+    "tracking.ccreminder.bri.co.id": "emailtracking.email-messaging.com",
+    "travelagent.bri.co.id": "opsicorp-bri.azurewebsites.net",
+    "umi.bri.co.id": "umi.gtm.bri.co.id",
+    "viz.datahub.bri.co.id": "viz.datahub.gtm.bri.co.id",
+    "wildcard.ddb.bri.co.id": "ddb.bri.co.id",
+    "wildcard.ddb.dev.bri.co.id": "ddb.dev.bri.co.id",
+    "wildcard.ddb.stg.bri.co.id": "ddb.stg.bri.co.id",
+    "wildcard.ddb.tbn.bri.co.id": "ddb.tbn.bri.co.id",
+    "wildcard.ddb.uat.bri.co.id": "ddb.uat.bri.co.id",
+    "wildcard.fds.bri.co.id": "fds.bri.co.id"
+  },
+  "domains_with_external_cname_total": 6,
+  "domains_with_public_ip": [
+    "3dsecure.bri.co.id",
+    "brilink.bri.co.id",
+    "brimo.bri.co.id",
+    "brinavi.bri.co.id",
+    "bripoin.bri.co.id",
+    "cms.wirausahabrilian.bri.co.id",
+    "digital.bri.co.id",
+    "e-pasar.bri.co.id",
+    "komoditi.bri.co.id",
+    "mobilef5.bri.co.id",
+    "mobilemms.bri.co.id",
+    "nelayansejahtera.bri.co.id",
+    "panela.kk.bri.co.id",
+    "qitta-assets.bri.co.id",
+    "qitta-piloting.bri.co.id",
+    "qitta.bri.co.id",
+    "rest.wirausahabrilian.bri.co.id",
+    "test.bri.co.id",
+    "tracking.ccreminder.bri.co.id",
+    "tradeportal.bri.co.id",
+    "travelagent.bri.co.id",
+    "vpn.bri.co.id",
+    "vpn2.bri.co.id",
+    "whistleblowing-system.bri.co.id"
+  ],
+  "domains_with_public_ip_total": 24,
+  "generated_at_utc": "2026-03-25T04:54:08.607306Z",
+  "ip_details": {
+    "1.1.4.2": {
+      "provider": "Other",
+      "subdomains": [
+        "test.bri.co.id"
+      ]
+    },
+    "1.1.4.5": {
+      "provider": "Other",
+      "subdomains": [
+        "test.bri.co.id"
+      ]
+    },
+    "103.63.96.0": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.96.102": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "tradeportal.bri.co.id"
+      ]
+    },
+    "103.63.96.150": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "rest.wirausahabrilian.bri.co.id"
+      ]
+    },
+    "103.63.96.190": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "vpn.bri.co.id"
+      ]
+    },
+    "103.63.96.207": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "nelayansejahtera.bri.co.id"
+      ]
+    },
+    "103.63.96.223": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "bripoin.bri.co.id"
+      ]
+    },
+    "103.63.96.249": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "whistleblowing-system.bri.co.id"
+      ]
+    },
+    "103.63.96.255": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.96.36": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "e-pasar.bri.co.id"
+      ]
+    },
+    "103.63.96.45": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "mobilemms.bri.co.id"
+      ]
+    },
+    "103.63.96.62": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "cms.wirausahabrilian.bri.co.id"
+      ]
+    },
+    "103.63.97.0": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.97.126": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "mobilef5.bri.co.id"
+      ]
+    },
+    "103.63.97.255": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.98.0": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.98.190": {
+      "provider": "BRI (Own)",
+      "subdomains": [
+        "vpn2.bri.co.id"
+      ]
+    },
+    "103.63.98.255": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.99.0": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "103.63.99.255": {
+      "provider": "BRI (Own)",
+      "subdomains": []
+    },
+    "18.198.163.56": {
+      "provider": "AWS",
+      "subdomains": [
+        "tracking.ccreminder.bri.co.id"
+      ]
+    },
+    "18.198.218.66": {
+      "provider": "AWS",
+      "subdomains": [
+        "tracking.ccreminder.bri.co.id"
+      ]
+    },
+    "20.247.144.196": {
+      "provider": "Azure",
+      "subdomains": [
+        "travelagent.bri.co.id"
+      ]
+    },
+    "202.162.242.221": {
+      "provider": "Lintasarta",
+      "subdomains": [
+        "panela.kk.bri.co.id"
+      ]
+    },
+    "34.101.160.24": {
+      "provider": "Google Cloud",
+      "subdomains": [
+        "brinavi.bri.co.id"
+      ]
+    },
+    "34.107.226.130": {
+      "provider": "Google Cloud",
+      "subdomains": [
+        "brilink.bri.co.id"
+      ]
+    },
+    "34.149.168.205": {
+      "provider": "Google Cloud",
+      "subdomains": [
+        "komoditi.bri.co.id"
+      ]
+    },
+    "35.201.71.129": {
+      "provider": "Google Cloud",
+      "subdomains": [
+        "digital.bri.co.id"
+      ]
+    },
+    "43.218.53.94": {
+      "provider": "AWS",
+      "subdomains": [
+        "3dsecure.bri.co.id"
+      ]
+    },
+    "45.60.48.181": {
+      "provider": "Imperva",
+      "subdomains": [
+        "brimo.bri.co.id",
+        "qitta-assets.bri.co.id",
+        "qitta-piloting.bri.co.id",
+        "qitta.bri.co.id"
+      ]
+    }
+  },
+  "ips_with_open_ports_total": 0,
+  "port_counts": {},
+  "provider_counts": {
+    "AWS": 3,
+    "Azure": 1,
+    "BRI (Own)": 19,
+    "Google Cloud": 4,
+    "Imperva": 1,
+    "Lintasarta": 1,
+    "Other": 2
+  },
+  "public_ips": [
+    "1.1.4.2",
+    "1.1.4.5",
+    "103.63.96.0",
+    "103.63.96.102",
+    "103.63.96.150",
+    "103.63.96.190",
+    "103.63.96.207",
+    "103.63.96.223",
+    "103.63.96.249",
+    "103.63.96.255",
+    "103.63.96.36",
+    "103.63.96.45",
+    "103.63.96.62",
+    "103.63.97.0",
+    "103.63.97.126",
+    "103.63.97.255",
+    "103.63.98.0",
+    "103.63.98.190",
+    "103.63.98.255",
+    "103.63.99.0",
+    "103.63.99.255",
+    "18.198.163.56",
+    "18.198.218.66",
+    "20.247.144.196",
+    "202.162.242.221",
+    "34.101.160.24",
+    "34.107.226.130",
+    "34.149.168.205",
+    "35.201.71.129",
+    "43.218.53.94",
+    "45.60.48.181"
+  ],
+  "public_ips_selected_for_shodan": 30,
+  "public_ips_total": 31,
+  "shodan": {},
+  "shodan_enriched_total": 0,
+  "subdomain_file": "/data/subdomains/bri.co.id_latest.txt",
+  "subdomains_processed": 388,
+  "target_domain": "bri.co.id"
+}
