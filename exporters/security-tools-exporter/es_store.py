@@ -173,17 +173,11 @@ def store_ip_exposure(payload):
     return
 
 
-def store_rapid7(total_assets, total_vulns, critical, high, moderate=0):
+def store_rapid7(summary):
+    """Store Rapid7 summary metrics as a single timestamped document."""
     if not _es_available():
         return
-    doc = {
-        "total_assets": total_assets,
-        "total_vulnerabilities": total_vulns,
-        "critical": critical,
-        "high": high,
-        "moderate": moderate,
-    }
-    index_document("security-rapid7", doc)
+    index_document("security-rapid7", summary)
 
 
 def _delete_by_query(index_name, query=None):
