@@ -1,0 +1,8 @@
+# This compose file is intentionally disabled.
+#
+# Use the root stack instead:
+#   c:/Users/lumberjack/Documents/erende-project/security-lab/docker-compose.yml
+#
+# Start from root folder:
+#   cd c:/Users/lumberjack/Documents/erende-project/security-lab
+#   docker-compose up -d --build

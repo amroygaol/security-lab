@@ -1,0 +1,89 @@
+budget_id;initiative;cost_type;domain;owner;quarter;amount;currency;status;priority;notes
+-;Pengadaan Layanan Whatsapp Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2026;Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;High;Gateway hardening, token protection, and API discovery expansion.
+-;"Pengadaan Lisensi Microsoft:
+- Entra ID P1 untuk 46.000 users
+- Entra ID P2, Identity Governance untuk 140.000 users
+- Entra External ID untuk 8000 users
+- Azure tenant untuk evironment dev dan staging";Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;High;Annual support and integration engineering.
+2026-CIS-B.10.001;-;Opex;Biaya Managed Service Digital & IT;IDP;2026;0;IDR;Planned;Medium;Detection engineering backlog and log retention uplift.
+2026-CIS-B.10.002;-;Opex;Biaya Managed Service Digital & IT;EPS;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.003;Perpanjangan CISO Coordinator BRI Group Periode 2025-2026;Opex;Biaya Managed Service Digital & IT;SRM;2026;9000000000;IDR;Planned;Medium;
+2026-CIS-B.10.004;Pengadaan Change Request Identity and Access Management (IAM) Platform Fase 2 (BRILIAN ID);Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.005;Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) Fase 2;Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.006;Pengadaan Identity and Access Management (IAM) Platform Fase 2 (BRILIAN ID);Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.007;Managed Service  365 Engineer On Site ;Opex;Biaya Managed Service Digital & IT;IAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.008;Penetration Test Aplikasi BRI;Opex;Biaya Managed Service Digital & IT;VAM;2026;49992527771;IDR;Planned;Medium;
+2026-CIS-B.10.009;Pengadaan Layanan SMS Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2026;Opex;Biaya Managed Service Digital & IT;DSE;2026;427459855;IDR;Planned;Medium;
+2026-CIS-B.10.010;Pengadaan Perpanjangan  Jasa Managed Service Security Operation Center & Threat Hunting 2025-2026;Opex;Biaya Managed Service Digital & IT;CIA;2026;10011189569;IDR;Planned;Medium;
+2026-CIS-B.10.011;Pengadaan Perpanjangan  Jasa Managed Service Security Operation Center & Threat Hunting 2026-2027;Opex;Biaya Managed Service Digital & IT;CIA;2026;7005594785;IDR;Planned;Medium;
+2026-CIS-B.10.012;Perpanjangan Managed Service Active Directory (On Premise);Opex;Biaya Managed Service Digital & IT;IAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.013;Pengadaan Layanan SMS Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2025;Opex;Biaya Managed Service Digital & IT;DSE;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.014;Perpanjangan Jasa FMS Support Layer 2 Security Patch dan Hardening untuk Workstation dan Server Tahun 2025;Opex;Biaya Managed Service Digital & IT;EPS;2026;0;IDR;Planned;Medium;
+2026-CIS-B.10.015;Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) 2025;Opex;Biaya Managed Service Digital & IT;IAM;2026;666000000;IDR;Planned;Medium;
+2026-CIS-B.10.016;Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) 2026;Opex;Biaya Managed Service Digital & IT;IAM;2026;666000000;IDR;Planned;Medium;
+2026-CIS-B.10.017;Pengadaan Support Implementasi dan Jasa Managed Service SD-WAN;Opex;Biaya Managed Service Digital & IT;SCR;2026;4456872000;IDR;Planned;Medium;
+2026-CIS-B.10.018;Pengadaan Jasa Cyber Attack Simulation (Red Team);Opex;Biaya Managed Service Digital & IT;VAM;2026;2507856020;IDR;Planned;Medium;
+2026-CIS-B.10.019;Perpanjangan Managed Service Engineer SOAR (Security Orchestration, Automation and Response) 2025;Opex;Biaya Managed Service Digital & IT;CIA;2026;277500000;IDR;Planned;Medium;
+2026-CIS-B.13.002;Resertifikasi PCIDSS Data Center dan Penambahan Scope DRC Tabanan;Opex;Honorarium Konsultan TI;SCA;2026;1000000000;IDR;Planned;Medium;
+2026-CIS-B.13.001;Tata Kelola Keamanan Informasi;Opex;Honorarium Konsultan TI;SGA;2026;1000000000;IDR;Planned;Medium;
+2026-CIS-B.13.003;Pengadaan Jasa Konsultan PCI DSS Assessment Scope Contact Center;Opex;Honorarium Konsultan TI;SCA;2026;800800000;IDR;Planned;Medium;
+2026-CIS-B.13.006;Pembayaran Tagihan Outsource CISO BRI New York;Opex;Honorarium Konsultan TI;SCA;2026;1269200000;IDR;Planned;Medium;
+2026-CIS-B.13.004;ESA Review;Opex;Honorarium Konsultan TI;SRM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.13.005;-;Opex;Honorarium Konsultan TI;SPO;2026;0;IDR;Planned;Medium;
+2026-CIS-B.13.007;-;Opex;Honorarium Konsultan TI;SCA;2026;0;IDR;Planned;Medium;
+2026-CIS-B.08.004;Jasa Cyber Security Incident Response Service (GiB);Opex;Honorarium Operasional TI;CIA;2026;6567750000;IDR;Planned;Medium;
+2026-CIS-B.08.001;Pengadaan Jasa Tenaga Kerja Outsource Fungsi IAM;Opex;Honorarium Operasional TI;;2026;5743717927;IDR;Planned;Medium;
+2026-CIS-B.08.002;Cybersecurity Maturity BRI Group Tahun  2024-2026;Opex;Honorarium Operasional TI;SRM;2026;4093823573;IDR;Planned;Medium;
+2026-CIS-B.08.006;Cyberdrill Tahun 2026;Opex;Honorarium Operasional TI;SGA;2026;1200000000;IDR;Planned;Medium;
+2026-CIS-B.08.007;Security Awareness;Opex;Honorarium Operasional TI;SGA;2026;500000000;IDR;Planned;Medium;
+2026-CIS-B.08.003;Perpanjangan Maintenance Modul WS Bridging Server Autentikasi;Opex;Honorarium Operasional TI;IAM;2026;235708500;IDR;Planned;Medium;
+2026-CIS-B.08.005;Pengadaan Jasa Tenaga Kerja Outsource Fungsi IAM;Opex;Honorarium Operasional TI;IAM;2026;0;IDR;Planned;Medium;
+-;HAPUS;Opex;Honorarium Operasional TI;IAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.006;Pengadaan Secure Access Service Edge (SASE);Opex;Jasa Berlangganan Software;SCR;2026;374112998325;IDR;Planned;Medium;
+2026-CIS-B.12.003;Pengadaan Implementasi Extended Security Intelligence and Automation Management (XSIAM) dan Extended Detection & Response (XDR);Opex;Jasa Berlangganan Software;DSE;2026;366230802600;IDR;Planned;Medium;
+2026-CIS-B.12.028;-;Opex;Jasa Berlangganan Software;IDP;2026;37241339431;IDR;Planned;Medium;
+2026-CIS-B.12.014;Pengadaan Perpanjangan License Subscription Threat Intelligence Service dan Brand Protection BRI Tahun 2025;Opex;Jasa Berlangganan Software;CIA;2026;6732970810;IDR;Planned;Medium;
+2026-CIS-B.12.007;Pengadaan Perpanjangan License dan Warranty Support Server Elasticsearch CIA 2026;Opex;Jasa Berlangganan Software;CIA;2026;6550000000;IDR;Planned;Medium;
+2026-CIS-B.12.005;Pengadaan Renewal Sertifikat SSL dan VMC 2026;Opex;Jasa Berlangganan Software;SCR;2026;4106393098;IDR;Planned;Medium;
+2026-CIS-B.12.001;Pengadaan Penambahan License Luna Client BIFAST BRI Tahun 2026;Opex;Jasa Berlangganan Software;;2026;2741223000;IDR;Planned;Medium;
+2026-CIS-B.12.016;Pengadaan Perpanjangan Solusi SOAR;Opex;Jasa Berlangganan Software;CIA;2026;2500000000;IDR;Planned;Medium;
+2026-CIS-B.12.013;Pengadaan Pembelian Lisensi Security Risk Scoring Service;Opex;Jasa Berlangganan Software;CIA;2026;1062563040;IDR;Planned;Medium;
+2026-CIS-B.12.024;Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco 2025;Opex;Jasa Berlangganan Software;DSM;2026;1000000000;IDR;Planned;Medium;
+2026-CIS-B.12.004;Pengadaan Renewal Sertifikat SSL dan VMC 2025;Opex;Jasa Berlangganan Software;SCR;2026;868562429;IDR;Planned;Medium;
+2026-CIS-B.12.020;Perpanjangan TLS ATM/CRM NCR Tahun 2025;Opex;Jasa Berlangganan Software;DSE;2026;800000000;IDR;Planned;Medium;
+2026-CIS-B.12.010;Perpanjangan Lisensi Perangkat Fortigate KCLN Timor Leste, KCLN Taipei, dan KCLN Singapore;Opex;Jasa Berlangganan Software;HBO;2026;600000000;IDR;Planned;Medium;
+2026-CIS-B.12.025;Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco 2026;Opex;Jasa Berlangganan Software;DSM;2026;500000000;IDR;Planned;Medium;
+2026-CIS-B.12.009;Pengadaan Subscription Attack Surface Management 2026;Opex;Jasa Berlangganan Software;CIA;2026;143228108;IDR;Planned;Medium;
+-;HAPUS;Opex;Jasa Berlangganan Software;CIA;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.008;Pengadaan Perpanjangan License dan Warranty Support Server Elasticsearch CIA 2027;Opex;Jasa Berlangganan Software;CIA;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.017;Pengadaan Renewal Maintenance Privilege Access Management;Opex;Jasa Berlangganan Software;IAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.011;Pembelian License Blancco Disk Erasure;Opex;Jasa Berlangganan Software;DSM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.022;Renewal VDI;Opex;Jasa Berlangganan Software;SPM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.021;Renewal Aqua Security Support & License;Opex;Jasa Berlangganan Software;SPM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.029;Implementation Manage File Transfer;Opex;Jasa Berlangganan Software;SPM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.019;Perpanjangan Pengadaan Container Security Tahun 2026 - 2027;Opex;Jasa Berlangganan Software;SCR;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.023;Renewal VDI DC-RGN;Opex;Jasa Berlangganan Software;SCR;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.018;Pengadaan Renewal MNV;Opex;Jasa Berlangganan Software;SCR;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.002;Implementasi Extended Security Intelligence and Automation Management (XSIAM) dan Extended Detection & Response (XDR) Fase 2;Opex;Jasa Berlangganan Software;DSE;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.015;Pengadaan Perpanjangan Lisensi Server & Storage Controller FMG-FAZ GTI;Opex;Jasa Berlangganan Software;HBO;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.012;Pengadaan License Subscription Deep and Dark Web Monitoring BRI Tahun 2025;Opex;Jasa Berlangganan Software;CIA;2026;4996919159;IDR;Planned;Medium;
+2026-CIS-B.12.026;-;Opex;Jasa Berlangganan Software;CIA;2026;0;IDR;Planned;Medium;
+2026-CIS-B.12.027;-;Opex;Jasa Berlangganan Software;SPM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.014;Perpanjangan Lisensi dan Maintenance Active Directory Management Tools 2026 - 2027;Opex;Pemeliharaan & Perbaikan AT HW SW;IAM;2026;1025626125;IDR;Planned;Medium;
+2026-CIS-B.05.012;Pengadaan renewal solusi NGFW bagian dari pengadaan managed service wifi Brilian Tower;Opex;Pemeliharaan & Perbaikan AT HW SW;HBO;2026;8000000000;IDR;Planned;Medium;
+2026-CIS-B.05.011;Perpanjangan Maintenance Server Encryption TLE EDC 2026;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;2476726500;IDR;Planned;Medium;
+2026-CIS-B.05.007;Pengadaan Perpanjangan Principal Support License dan Maintenance & Managed Service DLP Trellix 2026-2027;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;2500000000;IDR;Planned;Medium;
+2026-CIS-B.05.002;Perpanjangan Maintenance HSM Thales Luna BIFAST;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;2476726500;IDR;Planned;Medium;
+-;HAPUS;Opex;Pemeliharaan & Perbaikan AT HW SW;VAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.008;Trellix DLP on Cloud;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.003;Pengadaan HSM 10K Development di Data Center Tabanan;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.004;Pengadaan HSM di Onshore Data Center (ODC) Sentul;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.005;Perpanjangan Maintenance HSM 10000;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;5342228875;IDR;Planned;Medium;
+2026-CIS-B.05.006;Perpanjangan Maintenance HSM Thales 10000 Payshield;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;10684457750;IDR;Planned;Medium;
+2026-CIS-B.05.013;Perpanjangan Maintenance Web Service Bridging Server Autentikasi;Opex;Pemeliharaan & Perbaikan AT HW SW;IAM;2026;800000000;IDR;Planned;Medium;
+2026-CIS-B.05.010;Perpanjangan Maintenance Server Encryption TLE EDC 2025;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;1238363250;IDR;Planned;Medium;
+-;HAPUS;Opex;Pemeliharaan & Perbaikan AT HW SW;SPM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.015;Perpanjangan Maintenance & Konsultansi DAST Solutions Tahun 2025-2026;Opex;Pemeliharaan & Perbaikan AT HW SW;VAM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.001;Perpanjangan Maintenance HSM SafeNet Luna BIFAST;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;0;IDR;Planned;Medium;
+2026-CIS-B.05.009;Pengadaan Perpanjangan Principal Support License dan Maintenance & Managed Service DLP Trellix;Opex;Pemeliharaan & Perbaikan AT HW SW;DSM;2026;2794871000;IDR;Planned;Medium;
+;;;;;;;IDR;Planned;Medium;

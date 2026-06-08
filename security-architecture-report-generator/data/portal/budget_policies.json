@@ -1,0 +1,10 @@
+[
+  {
+    "policy_id": "POL-001",
+    "text": "Draft and Planned items with High priority should have owner and risk notes before approval."
+  },
+  {
+    "policy_id": "POL-002",
+    "text": "Based on CIS benchmark, which initiative should be prioritized?"
+  }
+]

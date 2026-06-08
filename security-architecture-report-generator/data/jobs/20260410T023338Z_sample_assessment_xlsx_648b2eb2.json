@@ -1,0 +1,14 @@
+{
+  "id": "20260410T023338Z_sample_assessment_xlsx_648b2eb2",
+  "status": "cancel_requested",
+  "source_name": "sample_assessment.xlsx",
+  "created_at_utc": "2026-04-10 02:33:38 UTC",
+  "updated_at_utc": "2026-04-10 02:42:48 UTC",
+  "max_retrieval_docs": 8,
+  "internet_enrichment_enabled": true,
+  "error": "Stop requested by user",
+  "report_id": "",
+  "report_markdown_path": "",
+  "started_at_utc": "2026-04-10 02:33:40 UTC",
+  "cancel_requested_at_utc": "2026-04-10 02:42:48 UTC"
+}

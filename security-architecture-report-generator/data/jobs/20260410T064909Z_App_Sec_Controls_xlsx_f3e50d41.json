@@ -1,0 +1,21 @@
+{
+  "id": "20260410T064909Z_App_Sec_Controls_xlsx_f3e50d41",
+  "status": "completed",
+  "source_name": "App Sec Controls.xlsx",
+  "created_at_utc": "2026-04-10 06:49:09 UTC",
+  "updated_at_utc": "2026-04-10 06:51:12 UTC",
+  "max_retrieval_docs": 8,
+  "internet_enrichment_enabled": false,
+  "error": "",
+  "report_id": "20260410T065112Z_App_Sec_Controls_xlsx",
+  "report_markdown_path": "/app/data/reports/20260410T065112Z_App_Sec_Controls_xlsx.md",
+  "started_at_utc": "2026-04-10 06:49:11 UTC",
+  "completed_at_utc": "2026-04-10 06:51:12 UTC",
+  "stats": {
+    "technologies": 8,
+    "findings": 4,
+    "controls": 17,
+    "sheets": 2,
+    "enrichment_docs": 0
+  }
+}

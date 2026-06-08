@@ -1,0 +1,13 @@
+{
+  "id": "20260410T064920Z_App_Sec_Controls_xlsx_4961a901",
+  "status": "canceled",
+  "source_name": "App Sec Controls.xlsx",
+  "created_at_utc": "2026-04-10 06:49:20 UTC",
+  "updated_at_utc": "2026-04-10 06:49:31 UTC",
+  "max_retrieval_docs": 8,
+  "internet_enrichment_enabled": false,
+  "error": "Canceled by user before execution",
+  "report_id": "",
+  "report_markdown_path": "",
+  "canceled_at_utc": "2026-04-10 06:49:31 UTC"
+}
