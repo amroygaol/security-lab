@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebAuthn Bridge</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    .wrap {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 14px;
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #18382a 0%, #2f6a4a 100%);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button[disabled] {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    .status {
+      font-size: 0.82rem;
+      color: rgba(80, 94, 86, 0.95);
+      min-height: 1.15rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <button id="actionButton" type="button">Use Passkey</button>
+    <div class="status" id="statusText"></div>
+  </div>
+
+  <script>
+    const actionButton = document.getElementById("actionButton");
+    const statusText = document.getElementById("statusText");
+    let currentArgs = {};
+    let isRunning = false;
+
+    function sendMessage(type, payload) {
+      window.parent.postMessage({ type, ...payload }, "*");
+    }
+
+    function setFrameHeight() {
+      requestAnimationFrame(() => {
+        const h = Math.max(72, document.documentElement.scrollHeight || document.body.scrollHeight || 72);
+        sendMessage("streamlit:setFrameHeight", { height: h });
+      });
+    }
+
+    function setComponentValue(value) {
+      sendMessage("streamlit:setComponentValue", { value });
+    }
+
+    function setStatus(message) {
+      statusText.textContent = message || "";
+      setFrameHeight();
+    }
+
+    function decodeBase64Url(input) {
+      const normalized = (input || "").replace(/-/g, "+").replace(/_/g, "/");
+      const padded = normalized + "=".repeat((4 - (normalized.length % 4 || 4)) % 4);
+      const binary = window.atob(padded);
+      const bytes = new Uint8Array(binary.length);
+      for (let index = 0; index < binary.length; index += 1) {
+        bytes[index] = binary.charCodeAt(index);
+      }
+      return bytes.buffer;
+    }
+
+    function encodeBase64Url(buffer) {
+      const bytes = buffer instanceof ArrayBuffer ? new Uint8Array(buffer) : new Uint8Array(buffer.buffer);
+      let binary = "";
+      for (const byte of bytes) {
+        binary += String.fromCharCode(byte);
+      }
+      return window.btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+    }
+
+    function normalizeCreationOptions(options) {
+      const publicKey = { ...options };
+      publicKey.challenge = decodeBase64Url(publicKey.challenge);
+      publicKey.user = { ...publicKey.user, id: decodeBase64Url(publicKey.user.id) };
+      publicKey.excludeCredentials = (publicKey.excludeCredentials || []).map((credential) => ({
+        ...credential,
+        id: decodeBase64Url(credential.id),
+      }));
+      return publicKey;
+    }
+
+    function normalizeRequestOptions(options) {
+      const publicKey = { ...options };
+      publicKey.challenge = decodeBase64Url(publicKey.challenge);
+      publicKey.allowCredentials = (publicKey.allowCredentials || []).map((credential) => ({
+        ...credential,
+        id: decodeBase64Url(credential.id),
+      }));
+      return publicKey;
+    }
+
+    function serializeCredential(credential) {
+      const response = {};
+      for (const key of Object.keys(credential.response || {})) {
+        const value = credential.response[key];
+        if (value instanceof ArrayBuffer) {
+          response[key] = encodeBase64Url(value);
+        }
+      }
+
+      if (typeof credential.response.getTransports === "function") {
+        response.transports = credential.response.getTransports();
+      }
+
+      return {
+        id: credential.id,
+        rawId: encodeBase64Url(credential.rawId),
+        response,
+        type: credential.type,
+        authenticatorAttachment: credential.authenticatorAttachment || null,
+        clientExtensionResults: credential.getClientExtensionResults ? credential.getClientExtensionResults() : {},
+      };
+    }
+
+    async function runWebAuthn() {
+      if (isRunning) return;
+      if (!window.PublicKeyCredential || !navigator.credentials) {
+        setStatus("This browser does not support passkeys.");
+        setComponentValue({ ok: false, error: "This browser does not support passkeys." });
+        return;
+      }
+
+      const mode = currentArgs.mode || "authenticate";
+      const optionsJson = currentArgs.optionsJson || "";
+      if (!optionsJson) {
+        setStatus("No WebAuthn options were provided by the server.");
+        setComponentValue({ ok: false, error: "Missing WebAuthn options." });
+        return;
+      }
+
+      isRunning = true;
+      actionButton.disabled = true;
+      setStatus(mode === "register" ? "Waiting for authenticator approval..." : "Waiting for passkey authentication...");
+
+      try {
+        const rawOptions = JSON.parse(optionsJson);
+        const publicKey = mode === "register" ? normalizeCreationOptions(rawOptions) : normalizeRequestOptions(rawOptions);
+        const credential = mode === "register"
+          ? await navigator.credentials.create({ publicKey })
+          : await navigator.credentials.get({ publicKey });
+
+        if (!credential) {
+          throw new Error("No credential was returned by the authenticator.");
+        }
+
+        setStatus(mode === "register" ? "Passkey registered successfully." : "Passkey verified.");
+        setComponentValue({ ok: true, credential: serializeCredential(credential), operation: mode, ts: Date.now() });
+      } catch (error) {
+        const message = error && error.message ? error.message : String(error);
+        setStatus(message);
+        setComponentValue({ ok: false, error: message, operation: mode, ts: Date.now() });
+      } finally {
+        isRunning = false;
+        actionButton.disabled = Boolean(currentArgs.disabled);
+        setFrameHeight();
+      }
+    }
+
+    function render() {
+      actionButton.textContent = currentArgs.buttonLabel || "Use Passkey";
+      // Don't interrupt an active ceremony on re-render
+      if (!isRunning) {
+        actionButton.disabled = Boolean(currentArgs.disabled);
+        setStatus("");
+      }
+      setFrameHeight();
+    }
+
+    actionButton.addEventListener("click", runWebAuthn);
+
+    window.addEventListener("message", (event) => {
+      if (!event.data || event.data.type !== "streamlit:render") {
+        return;
+      }
+      currentArgs = event.data.args || {};
+      render();
+    });
+
+    window.addEventListener("load", () => {
+      sendMessage("streamlit:componentReady", { apiVersion: 1 });
+      setFrameHeight();
+    });
+  </script>
+</body>
+</html>

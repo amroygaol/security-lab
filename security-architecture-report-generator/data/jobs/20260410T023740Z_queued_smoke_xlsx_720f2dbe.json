@@ -1,0 +1,14 @@
+{
+  "id": "20260410T023740Z_queued_smoke_xlsx_720f2dbe",
+  "status": "cancel_requested",
+  "source_name": "queued_smoke.xlsx",
+  "created_at_utc": "2026-04-10 02:37:40 UTC",
+  "updated_at_utc": "2026-04-10 02:42:43 UTC",
+  "max_retrieval_docs": 8,
+  "internet_enrichment_enabled": false,
+  "error": "Stop requested by user",
+  "report_id": "",
+  "report_markdown_path": "",
+  "started_at_utc": "2026-04-10 02:38:11 UTC",
+  "cancel_requested_at_utc": "2026-04-10 02:42:43 UTC"
+}

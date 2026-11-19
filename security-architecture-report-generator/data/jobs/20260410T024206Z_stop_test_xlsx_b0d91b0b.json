@@ -1,0 +1,13 @@
+{
+  "id": "20260410T024206Z_stop_test_xlsx_b0d91b0b",
+  "status": "canceled",
+  "source_name": "stop_test.xlsx",
+  "created_at_utc": "2026-04-10 02:42:06 UTC",
+  "updated_at_utc": "2026-04-10 02:42:07 UTC",
+  "max_retrieval_docs": 8,
+  "internet_enrichment_enabled": false,
+  "error": "Canceled by user before execution",
+  "report_id": "",
+  "report_markdown_path": "",
+  "canceled_at_utc": "2026-04-10 02:42:07 UTC"
+}

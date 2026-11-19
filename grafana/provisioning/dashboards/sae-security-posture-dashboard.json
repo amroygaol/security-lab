@@ -1,0 +1,747 @@
+{
+  "annotations": { "list": [] },
+  "description": "SAE Dashboard: Comprehensive Security Posture Management across network, vulnerability, endpoint, and application security domains.",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [
+    {
+      "title": "Exporter Collector Health",
+      "type": "dashboards",
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [],
+      "targetBlank": false,
+      "url": "/d/security-exporter-collector-health"
+    }
+  ],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 },
+      "id": 100,
+      "title": "Executive Security Posture",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 0, "y": 1 },
+      "id": 1,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Discovered Subdomains",
+      "type": "stat",
+      "targets": [ { "expr": "public_subdomains_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 100 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 3, "y": 1 },
+      "id": 2,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Public Exposed IPs",
+      "type": "stat",
+      "targets": [ { "expr": "public_exposed_ips_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 10 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 6, "y": 1 },
+      "id": 3,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "IPs With Open Ports",
+      "type": "stat",
+      "targets": [ { "expr": "public_exposed_ips_with_open_ports_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "red", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 9, "y": 1 },
+      "id": 4,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Certs Expiring 30d",
+      "type": "stat",
+      "targets": [ { "expr": "digicert_cert_expiring_30_days", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "red", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 12, "y": 1 },
+      "id": 5,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Critical Vulns",
+      "type": "stat",
+      "targets": [ { "expr": "rapid7_vulnerabilities_critical", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "red", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 15, "y": 1 },
+      "id": 6,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Open XDR Incidents",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_incidents_open", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 18, "y": 1 },
+      "id": 7,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Active AppSec Findings",
+      "type": "stat",
+      "targets": [ { "expr": "defectdojo_findings_active", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "decimals": 2, "max": 1, "min": 0, "unit": "percentunit", "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 0.75 }, { "color": "green", "value": 1 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 3, "x": 21, "y": 1 },
+      "id": 8,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Collection Success (Known)",
+      "type": "stat",
+      "targets": [ { "expr": "(public_subdomains_last_collection_success + public_exposed_last_collection_success + defectdojo_collection_success) / 3", "refId": "A" } ]
+    },
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 5 },
+      "id": 101,
+      "title": "Attack Surface Trends",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 6 },
+      "id": 20,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Subdomain Discovery Trend",
+      "type": "timeseries",
+      "targets": [ { "expr": "public_subdomains_total", "legendFormat": "Subdomains", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 6 },
+      "id": 21,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Public IP Exposure Trend",
+      "type": "timeseries",
+      "targets": [ { "expr": "public_exposed_ips_total", "legendFormat": "Public IPs", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 6 },
+      "id": 22,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Top Exposed Ports",
+      "type": "timeseries",
+      "targets": [ { "expr": "topk(10, public_exposed_ports_total)", "legendFormat": "Port {{port}}", "refId": "A" } ]
+    },
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 14 },
+      "id": 102,
+      "title": "Vulnerability and AppSec",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 15 },
+      "id": 30,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Rapid7 Vulnerabilities by Severity",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "rapid7_vulnerabilities_critical", "legendFormat": "Critical", "refId": "A" },
+        { "expr": "rapid7_vulnerabilities_high", "legendFormat": "High", "refId": "B" },
+        { "expr": "rapid7_vulnerabilities_moderate", "legendFormat": "Moderate", "refId": "C" }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 15 },
+      "id": 31,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "DefectDojo Findings by Severity",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "defectdojo_findings_critical", "legendFormat": "Critical", "refId": "A" },
+        { "expr": "defectdojo_findings_high", "legendFormat": "High", "refId": "B" },
+        { "expr": "defectdojo_findings_medium", "legendFormat": "Medium", "refId": "C" },
+        { "expr": "defectdojo_findings_low", "legendFormat": "Low", "refId": "D" }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 15 },
+      "id": 32,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "DefectDojo Technical Debt Age",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "defectdojo_findings_older_30d", "legendFormat": ">30d", "refId": "A" },
+        { "expr": "defectdojo_findings_older_90d", "legendFormat": ">90d", "refId": "B" },
+        { "expr": "defectdojo_findings_older_180d", "legendFormat": ">180d", "refId": "C" }
+      ]
+    },
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 23 },
+      "id": 103,
+      "title": "Endpoint Posture",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 1 }, { "color": "green", "value": 500 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 24 },
+      "id": 40,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Endpoints Total",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_endpoints_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 1 }, { "color": "green", "value": 300 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 24 },
+      "id": 41,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Endpoints Online",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_endpoints_online", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "decimals": 2, "max": 1, "min": 0, "unit": "percentunit", "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 0.85 }, { "color": "green", "value": 0.95 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 24 },
+      "id": 43,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Endpoint Coverage",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_endpoints_online / clamp_min(cortex_xdr_endpoints_total, 1)", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 5 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 24 },
+      "id": 44,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Open Incidents",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_incidents_open", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 10 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 16, "y": 24 },
+      "id": 45,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Malware Alerts",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_malware_alerts_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 25 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 20, "y": 24 },
+      "id": 46,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Outdated Agents",
+      "type": "stat",
+      "targets": [ { "expr": "cortex_xdr_agents_outdated", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 28 },
+      "id": 47,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Endpoint and Alert State",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "cortex_xdr_endpoints_total", "legendFormat": "Endpoints Total", "refId": "A" },
+        { "expr": "cortex_xdr_endpoints_online", "legendFormat": "Endpoints Online", "refId": "B" },
+        { "expr": "cortex_xdr_alerts_total", "legendFormat": "Alerts", "refId": "C" },
+        { "expr": "cortex_xdr_malware_alerts_total", "legendFormat": "Malware Alerts", "refId": "D" }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 28 },
+      "id": 48,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Incident Severity",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "cortex_xdr_incidents_high", "legendFormat": "High", "refId": "A" },
+        { "expr": "cortex_xdr_incidents_medium", "legendFormat": "Medium", "refId": "B" },
+        { "expr": "cortex_xdr_incidents_low", "legendFormat": "Low", "refId": "C" }
+      ]
+    },
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 36 },
+      "id": 105,
+      "title": "Certificate Posture",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 37 },
+      "id": 49,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "DigiCert Certificate Lifecycle",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "digicert_certificates_active", "legendFormat": "Active", "refId": "A" },
+        { "expr": "digicert_certificates_expired", "legendFormat": "Expired", "refId": "B" },
+        { "expr": "digicert_certificates_revoked", "legendFormat": "Revoked", "refId": "C" },
+        { "expr": "digicert_cert_expiring_7_days", "legendFormat": "Expiring 7d", "refId": "D" }
+      ]
+    },
+
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 56 },
+      "id": 106,
+      "title": "IP Scan Coverage",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "blue", "value": null } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 57 },
+      "id": 60,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Exposed IPs",
+      "type": "stat",
+      "targets": [ { "expr": "ip_scan_coverage_exposed_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 57 },
+      "id": 61,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Scanned by Rapid7",
+      "type": "stat",
+      "targets": [ { "expr": "ip_scan_coverage_scanned_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 10 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 57 },
+      "id": 62,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Unscanned (Gap)",
+      "type": "stat",
+      "targets": [ { "expr": "ip_scan_coverage_unscanned_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "decimals": 2, "max": 1, "min": 0, "unit": "percentunit", "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 0.80 }, { "color": "green", "value": 0.95 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 57 },
+      "id": 63,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Scan Coverage Ratio",
+      "type": "stat",
+      "targets": [ { "expr": "ip_scan_coverage_ratio", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 5 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 8, "x": 16, "y": 57 },
+      "id": 64,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Critical Gap (Unscanned + Open Ports)",
+      "type": "stat",
+      "targets": [ { "expr": "ip_scan_coverage_critical_gap_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" } }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 61 },
+      "id": 65,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "IP Scan Coverage Trend",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "ip_scan_coverage_exposed_total", "legendFormat": "Exposed IPs", "refId": "A" },
+        { "expr": "ip_scan_coverage_scanned_total", "legendFormat": "Scanned", "refId": "B" },
+        { "expr": "ip_scan_coverage_unscanned_total", "legendFormat": "Unscanned (Gap)", "refId": "C" }
+      ]
+    },
+    {
+      "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+      "fieldConfig": { "defaults": {}, "overrides": [] },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 69 },
+      "id": 66,
+      "options": {
+        "showHeader": true,
+        "sortBy": [ { "desc": false, "displayName": "ip" } ],
+        "footer": { "enablePagination": true }
+      },
+      "title": "Unscanned Exposed IPs – Coverage Gap Drilldown",
+      "type": "table",
+      "targets": [
+        {
+          "alias": "",
+          "bucketAggs": [],
+          "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+          "metrics": [ { "id": "1", "settings": { "size": "1000" }, "type": "raw_data" } ],
+          "query": "coverage_gap:true",
+          "refId": "A",
+          "timeField": "@timestamp",
+          "index": "security-ip-scan-coverage"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "ip",
+                "subdomain",
+                "target_domain",
+                "provider",
+                "has_open_ports",
+                "open_ports",
+                "scan_status"
+              ]
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "renameByName": {
+              "ip": "IP",
+              "subdomain": "Subdomain",
+              "target_domain": "Domain",
+              "provider": "Provider",
+              "has_open_ports": "Open Ports?",
+              "open_ports": "Ports",
+              "scan_status": "Status"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+      "fieldConfig": { "defaults": {}, "overrides": [] },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 81 },
+      "id": 67,
+      "options": {
+        "showHeader": true,
+        "sortBy": [ { "desc": true, "displayName": "rapid7_risk_score" } ],
+        "footer": { "enablePagination": true }
+      },
+      "title": "Scanned Exposed IPs – Risk Enrichment (Rapid7)",
+      "type": "table",
+      "targets": [
+        {
+          "alias": "",
+          "bucketAggs": [],
+          "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+          "metrics": [ { "id": "1", "settings": { "size": "1000" }, "type": "raw_data" } ],
+          "query": "is_scanned_by_rapid7:true",
+          "refId": "A",
+          "timeField": "@timestamp",
+          "index": "security-ip-scan-coverage"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "ip",
+                "subdomain",
+                "provider",
+                "rapid7_risk_score",
+                "rapid7_total_vulnerabilities",
+                "rapid7_critical_vulnerabilities",
+                "rapid7_is_stale",
+                "rapid7_last_scan_end"
+              ]
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "renameByName": {
+              "ip": "IP",
+              "subdomain": "Subdomain",
+              "provider": "Provider",
+              "rapid7_risk_score": "Risk Score",
+              "rapid7_total_vulnerabilities": "Total Vulns",
+              "rapid7_critical_vulnerabilities": "Critical Vulns",
+              "rapid7_is_stale": "Stale?",
+              "rapid7_last_scan_end": "Last Scan"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 93 },
+      "id": 108,
+      "title": "Public Website & Service Security (Imperva)",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "blue", "value": null } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 94 },
+      "id": 70,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Total Sites Protected",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_total", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "red", "value": null }, { "color": "orange", "value": 1 }, { "color": "green", "value": 50 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 94 },
+      "id": 71,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Active (Protected)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_active", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 1 }, { "color": "red", "value": 5 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 94 },
+      "id": 72,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Bypass Mode (At Risk)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_bypassed", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 50 }, { "color": "red", "value": 100 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 94 },
+      "id": 73,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "SSL/TLS Enabled",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_ssl_enabled", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "orange", "value": 10 }, { "color": "red", "value": 30 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 16, "y": 94 },
+      "id": 74,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "WAF Blocking Mode",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_blocking_mode", "refId": "A" } ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 4, "x": 20, "y": 94 },
+      "id": 75,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "DDoS Protection Enabled",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_sites_ddos_protection_enabled", "refId": "A" } ]
+    },
+
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" }, "custom": { "hideFrom": { "tooltip": false, "viz": false, "legend": false } }, "mappings": [] }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 98 },
+      "id": 76,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "pieType": "pie" },
+      "title": "WAF Mode Distribution",
+      "type": "piechart",
+      "targets": [
+        { "expr": "imperva_waf_sites_blocking_mode", "legendFormat": "Blocking", "refId": "A" },
+        { "expr": "imperva_waf_sites_alert_only_mode", "legendFormat": "Alert Only", "refId": "B" }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "palette-classic" }, "custom": { "axisLabel": "", "axisPlacement": "auto", "barAlignment": 0, "drawStyle": "line", "fillOpacity": 10, "gradientMode": "none", "hideFrom": { "tooltip": false, "viz": false, "legend": false }, "lineInterpolation": "linear", "lineWidth": 1, "pointSize": 5, "scaleDistribution": { "type": "linear" }, "showPoints": "auto", "spanNulls": true, "stacking": { "group": "A", "mode": "none" }, "thresholdsStyle": { "mode": "off" } }, "mappings": [], "max": 1, "min": 0, "thresholds": { "mode": "absolute", "steps": [ { "color": "green", "value": null }, { "color": "yellow", "value": 0.5 }, { "color": "red", "value": 0.8 } ] }, "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 98 },
+      "id": 77,
+      "options": { "legend": { "displayMode": "list", "placement": "bottom" }, "tooltip": { "mode": "single" } },
+      "title": "Security Protection Coverage Trend",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "imperva_waf_sites_active", "legendFormat": "Active Sites", "refId": "A" },
+        { "expr": "imperva_waf_sites_ssl_enabled", "legendFormat": "SSL Enabled", "refId": "B" },
+        { "expr": "imperva_waf_sites_ddos_protection_enabled", "legendFormat": "DDoS Protected", "refId": "C" }
+      ]
+    },
+
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "gray", "value": null }, { "color": "gray", "value": 0 }, { "color": "green", "value": 1 }, { "color": "orange", "value": 10000 }, { "color": "red", "value": 100000 } ] }, "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 106 },
+      "id": 78,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Threats Blocked (30d)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_threats_total_30d", "refId": "A" } ],
+      "description": "Total attacks blocked by Imperva WAF. Shows gray if data unavailable."
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "gray", "value": null }, { "color": "gray", "value": 0 }, { "color": "green", "value": 1 }, { "color": "orange", "value": 5000 }, { "color": "red", "value": 50000 } ] }, "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 106 },
+      "id": 79,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "Requests Blocked (30d)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_requests_blocked_30d", "refId": "A" } ],
+      "description": "HTTP requests denied by Imperva WAF. Shows gray if stats are disabled."
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "gray", "value": null }, { "color": "gray", "value": 0 }, { "color": "green", "value": 1 }, { "color": "orange", "value": 5 }, { "color": "red", "value": 20 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 106 },
+      "id": 80,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "SQL Injection Blocked (30d)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_threats_sql_injection_30d", "refId": "A" } ],
+      "description": "SQL injection attacks blocked. Shows gray if stats endpoint unavailable."
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "thresholds" }, "thresholds": { "mode": "absolute", "steps": [ { "color": "gray", "value": null }, { "color": "gray", "value": 0 }, { "color": "green", "value": 1 }, { "color": "orange", "value": 5 }, { "color": "red", "value": 20 } ] } }, "overrides": [] },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 106 },
+      "id": 81,
+      "options": { "colorMode": "background", "graphMode": "none", "justifyMode": "auto", "orientation": "auto", "reduceOptions": { "calcs": [ "lastNotNull" ], "fields": "", "values": false }, "textMode": "auto" },
+      "title": "XSS Blocked (30d)",
+      "type": "stat",
+      "targets": [ { "expr": "imperva_waf_threats_xss_30d", "refId": "A" } ],
+      "description": "Cross-site scripting attacks blocked. Shows gray if stats endpoint unavailable."
+    },
+
+    {
+      "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+      "fieldConfig": { "defaults": {}, "overrides": [] },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 110 },
+      "id": 82,
+      "options": {
+        "showHeader": true,
+        "sortBy": [ { "desc": false, "displayName": "domain" } ],
+        "footer": { "enablePagination": true }
+      },
+      "title": "Protected Domains – WAF Posture Inventory",
+      "type": "table",
+      "targets": [
+        {
+          "alias": "",
+          "bucketAggs": [],
+          "datasource": { "type": "elasticsearch", "uid": "${DS_ELASTICSEARCH}" },
+          "metrics": [ { "id": "1", "settings": { "size": "500" }, "type": "raw_data" } ],
+          "query": "*",
+          "refId": "A",
+          "timeField": "@timestamp",
+          "index": "security-imperva-sites"
+        }
+      ],
+      "transformations": [
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "domain",
+                "display_name",
+                "status",
+                "ssl_enabled",
+                "waf_mode",
+                "ddos_protection",
+                "bot_mitigation",
+                "acl_rules_count",
+                "data_centers_count"
+              ]
+            }
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "renameByName": {
+              "domain": "Domain",
+              "display_name": "Display Name",
+              "status": "Status",
+              "ssl_enabled": "SSL",
+              "waf_mode": "WAF Mode",
+              "ddos_protection": "DDoS",
+              "bot_mitigation": "Bot Mitig.",
+              "acl_rules_count": "ACL Rules",
+              "data_centers_count": "Data Centers"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": ["security", "posture", "sae", "executive", "multi-source"],
+  "templating": {
+    "list": [
+      {
+        "current": { "selected": false, "text": "Prometheus", "value": "Prometheus" },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "DS_PROMETHEUS",
+        "options": [],
+        "query": "prometheus",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      },
+      {
+        "current": { "selected": false, "text": "Elasticsearch", "value": "Elasticsearch" },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "DS_ELASTICSEARCH",
+        "options": [],
+        "query": "elasticsearch",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": { "from": "now-24h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "SAE Dashboard - Security Posture Management",
+  "uid": "sae-security-posture",
+  "version": 5
+}

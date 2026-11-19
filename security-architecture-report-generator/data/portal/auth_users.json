@@ -1,0 +1,30 @@
+[
+  {
+    "username": "admin",
+    "full_name": "Portal Administrator",
+    "email": "admin@local",
+    "role": "admin",
+    "enabled": true,
+    "password_hash": "pbkdf2_sha256$200000$a6f1b0d754eaac4967ebb508bfdf5e6b$bbb23ab23e0729f7516848791fc8b74871b7eabd0eaafb8c1589bb51ff673015",
+    "saml_subject": "",
+    "passkey_code_hash": "",
+    "created_at_utc": "2026-04-10T05:06:18.591389+00:00",
+    "updated_at_utc": "2026-04-10T05:06:18.591411+00:00",
+    "webauthn_user_id": "S6JS_IRu7aSloEqE9HZZlIasZw6UW1FW",
+    "webauthn_credentials": []
+  },
+  {
+    "username": "amroygaols",
+    "full_name": "Amroy Lumban Gaol",
+    "email": "amroycasro@brilian.bri.co.id",
+    "role": "viewer",
+    "enabled": true,
+    "password_hash": "pbkdf2_sha256$200000$9f63f2503f101f3cd726024069617d74$6ce954da7589ff8002b5b4abe8998957c76aefb5f3bea993566c19b73a732b00",
+    "saml_subject": "",
+    "passkey_code_hash": "",
+    "created_at_utc": "2026-04-10T05:17:05.933606+00:00",
+    "updated_at_utc": "2026-04-10T09:04:23.157272+00:00",
+    "webauthn_user_id": "UxWd-7mDTGYosyNTFcfD1oqn1Qk-Fsn3",
+    "webauthn_credentials": []
+  }
+]

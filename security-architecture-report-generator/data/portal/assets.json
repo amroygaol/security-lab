@@ -1,0 +1,53 @@
+[
+  {
+    "asset_id": "AST-001",
+    "asset_name": "Internet Banking API Gateway",
+    "asset_type": "Platform",
+    "environment": "Production",
+    "owner": "Security Architecture",
+    "criticality": "Critical",
+    "vendor": "F5",
+    "license_name": "F5 Advanced WAF",
+    "license_type": "Subscription",
+    "license_seats": 4,
+    "seats_used": 4,
+    "annual_cost": 185000.0,
+    "renewal_date": "2026-05-25",
+    "support_status": "Active",
+    "notes": "Protects north-south traffic for payment and customer APIs."
+  },
+  {
+    "asset_id": "AST-002",
+    "asset_name": "Identity and Access Platform",
+    "asset_type": "Security Tool",
+    "environment": "Shared",
+    "owner": "IAM Team",
+    "criticality": "High",
+    "vendor": "Keycloak",
+    "license_name": "Red Hat Build Support",
+    "license_type": "Enterprise Support",
+    "license_seats": 12,
+    "seats_used": 9,
+    "annual_cost": 72000.0,
+    "renewal_date": "2026-08-08",
+    "support_status": "Active",
+    "notes": "Covers SSO, MFA, and privileged admin federation."
+  },
+  {
+    "asset_id": "AST-003",
+    "asset_name": "Cloud CSPM",
+    "asset_type": "Security Tool",
+    "environment": "Cloud",
+    "owner": "Cloud Security",
+    "criticality": "High",
+    "vendor": "Wiz",
+    "license_name": "Wiz Enterprise",
+    "license_type": "Subscription",
+    "license_seats": 150,
+    "seats_used": 123,
+    "annual_cost": 96000.0,
+    "renewal_date": "2026-04-30",
+    "support_status": "Renewal Soon",
+    "notes": "Integrated with asset discovery and vulnerability workflows."
+  }
+]

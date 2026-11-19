@@ -1,0 +1,22 @@
+{
+  "auth_enabled": true,
+  "providers": {
+    "local": true,
+    "saml": true,
+    "passkey": true
+  },
+  "saml": {
+    "enabled": false,
+    "auto_provision": true,
+    "allowed_domains": [],
+    "entity_id": "security-architecture-portal",
+    "idp_sso_url": "",
+    "idp_metadata_url": ""
+  },
+  "passkey": {
+    "enabled": false,
+    "auto_provision": false,
+    "display_name": "WebAuthn Bridge",
+    "note": "Use passkey bridge from your IdP or security gateway."
+  }
+}

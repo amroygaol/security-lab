@@ -1,0 +1,1752 @@
+[
+  {
+    "budget_id": "BDG-001",
+    "initiative": "Pengadaan Layanan Whatsapp Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2026",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "High",
+    "notes": "Gateway hardening, token protection, and API discovery expansion."
+  },
+  {
+    "budget_id": "BDG-002",
+    "initiative": "Pengadaan Lisensi Microsoft:\n- Entra ID P1 untuk 46.000 users\n- Entra ID P2, Identity Governance untuk 140.000 users\n- Entra External ID untuk 8000 users\n- Azure tenant untuk evironment dev dan staging",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "High",
+    "notes": "Annual support and integration engineering."
+  },
+  {
+    "budget_id": "2026-CIS-B.10.003",
+    "initiative": "Perpanjangan CISO Coordinator BRI Group Periode 2025-2026",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "SRM",
+    "quarter": "2026",
+    "amount": 9000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.004",
+    "initiative": "Pengadaan Change Request Identity and Access Management (IAM) Platform Fase 2 (BRILIAN ID)",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.005",
+    "initiative": "Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) Fase 2",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.006",
+    "initiative": "Pengadaan Identity and Access Management (IAM) Platform Fase 2 (BRILIAN ID)",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Identity and Access Management (IAM) Platform Fase 2 (BRILIAN ID)",
+        "cashout": 4847641866.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.10.007",
+    "initiative": "Managed Service  365 Engineer On Site",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.008",
+    "initiative": "Penetration Test Aplikasi BRI",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "VAM",
+    "quarter": "2026",
+    "amount": 49992527771.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. ITSEC Asia Tbk",
+        "cashout": 677600000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Systech Global Informasi",
+        "cashout": 955800000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Cynnex Integrasi Solusi",
+        "cashout": 235640000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Cynnex Integrasi Solusi",
+        "cashout": 131520000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Cynnex Integrasi Solusi",
+        "cashout": 180840000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Vantage Point Security Indonesia",
+        "cashout": 59840000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Vantage Point Security Indonesia",
+        "cashout": -1.0
+      },
+      {
+        "nama_spk": "Pembayaran Pentest 13 Mandays",
+        "cashout": 71428500.0
+      },
+      {
+        "nama_spk": "Pembayaran Pentest 14 Mandays",
+        "cashout": 76923000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Penetration Testing dan Security Assessment Aplikasi BRI oleh PT. Systech Global Informasi",
+        "cashout": 140400000.0
+      },
+      {
+        "nama_spk": "Pentest 11 Mandays Vantage Point",
+        "cashout": 60439500.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.10.009",
+    "initiative": "Pengadaan Layanan SMS Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2026",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 427459855.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.010",
+    "initiative": "Pengadaan Perpanjangan \u00a0Jasa Managed Service Security Operation Center & Threat Hunting 2025-2026",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 10011189569.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.011",
+    "initiative": "Pengadaan Perpanjangan \u00a0Jasa Managed Service Security Operation Center & Threat Hunting 2026-2027",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 7005594785.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.012",
+    "initiative": "Perpanjangan Managed Service Active Directory (On Premise)",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.013",
+    "initiative": "Pengadaan Layanan SMS Notifikasi & OTP untuk IAM Platform (BRILiaN ID) Periode Tahun 2025",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.014",
+    "initiative": "Perpanjangan Jasa FMS Support Layer 2 Security Patch dan Hardening untuk Workstation dan Server Tahun 2025",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "EPS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.015",
+    "initiative": "Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) 2025",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 666000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.016",
+    "initiative": "Pengadaan Jasa Pengembangan Solusi Third-Party Identity Management (TPIM) 2026",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 666000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.017",
+    "initiative": "Pengadaan Support Implementasi dan Jasa Managed Service SD-WAN",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 4456872000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.018",
+    "initiative": "Pengadaan Jasa Cyber Attack Simulation (Red Team)",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "VAM",
+    "quarter": "2026",
+    "amount": 2507856020.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.10.019",
+    "initiative": "Perpanjangan Managed Service Engineer SOAR (Security Orchestration, Automation and Response) 2025",
+    "cost_type": "Opex",
+    "domain": "Biaya Managed Service Digital & IT",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 277500000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Pekerjaan Bug Bounty Program BRI",
+        "cashout": 5957000.0
+      },
+      {
+        "nama_spk": "Pengadaan Pekerjaan Bug Bounty Program BRI",
+        "cashout": 23345000.0
+      },
+      {
+        "nama_spk": "Pengadaan Pekerjaan Bug Bounty Program BRI",
+        "cashout": 9772740.0
+      },
+      {
+        "nama_spk": "Pengadaan Pekerjaan Bug Bounty Program BRI",
+        "cashout": 1628790.0
+      },
+      {
+        "nama_spk": "Pengadaan Pekerjaan Bug Bounty Program BRI",
+        "cashout": 35833380.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.13.002",
+    "initiative": "Resertifikasi PCIDSS Data Center dan Penambahan Scope DRC Tabanan",
+    "cost_type": "Opex",
+    "domain": "Honorarium Konsultan TI",
+    "owner": "SCA",
+    "quarter": "2026",
+    "amount": 1000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.13.001",
+    "initiative": "Tata Kelola Keamanan Informasi",
+    "cost_type": "Opex",
+    "domain": "Honorarium Konsultan TI",
+    "owner": "SGA",
+    "quarter": "2026",
+    "amount": 1000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.13.003",
+    "initiative": "Pengadaan Jasa Konsultan PCI DSS Assessment Scope Contact Center",
+    "cost_type": "Opex",
+    "domain": "Honorarium Konsultan TI",
+    "owner": "SCA",
+    "quarter": "2026",
+    "amount": 800800000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.13.006",
+    "initiative": "Pembayaran Tagihan Outsource CISO BRI New York",
+    "cost_type": "Opex",
+    "domain": "Honorarium Konsultan TI",
+    "owner": "SCA",
+    "quarter": "2026",
+    "amount": 1269200000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "N/F",
+        "cashout": 151100250.0
+      },
+      {
+        "nama_spk": "N/F",
+        "cashout": 148137500.0
+      },
+      {
+        "nama_spk": "N/F",
+        "cashout": 148443750.0
+      },
+      {
+        "nama_spk": "N/F",
+        "cashout": 172194750.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.13.004",
+    "initiative": "ESA Review",
+    "cost_type": "Opex",
+    "domain": "Honorarium Konsultan TI",
+    "owner": "SRM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.08.004",
+    "initiative": "Jasa Cyber Security Incident Response Service (GiB)",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 6567750000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.08.001",
+    "initiative": "Pengadaan Jasa Tenaga Kerja Outsource Fungsi IAM",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "nan",
+    "quarter": "2026",
+    "amount": 5743717927.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Jasa Tenaga OS Periode November 2025",
+        "cashout": 135840000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Tenaga OS Periode Desember 2025",
+        "cashout": 135840000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.08.002",
+    "initiative": "Cybersecurity Maturity BRI Group Tahun  2024-2026",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "SRM",
+    "quarter": "2026",
+    "amount": 4093823573.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.08.006",
+    "initiative": "Cyberdrill Tahun 2026",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "SGA",
+    "quarter": "2026",
+    "amount": 1200000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Jasa Simulasi Cyber Dril Q4 Termin 1",
+        "cashout": 144969000.0
+      },
+      {
+        "nama_spk": "Pengadaan Jasa Simulasi Cyber Dril Q4 Final",
+        "cashout": 144969000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.08.007",
+    "initiative": "Security Awareness",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "SGA",
+    "quarter": "2026",
+    "amount": 500000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Beban Honor OPS IT Bug Bounty Muhammad Fathoni",
+        "cashout": 1052632.0
+      },
+      {
+        "nama_spk": "Beban Honor OPS IT Bug Bounty Andri",
+        "cashout": 1052632.0
+      },
+      {
+        "nama_spk": "Beban Honor OPS IT Bug Bounty Muhammad Fakhruddin",
+        "cashout": 1052632.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.08.003",
+    "initiative": "Perpanjangan Maintenance Modul WS Bridging Server Autentikasi",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 235708500.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.08.005",
+    "initiative": "Pengadaan Jasa Tenaga Kerja Outsource Fungsi IAM",
+    "cost_type": "Opex",
+    "domain": "Honorarium Operasional TI",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.006",
+    "initiative": "Pengadaan Secure Access Service Edge (SASE)",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 374112998325.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.003",
+    "initiative": "Pengadaan Implementasi Extended Security Intelligence and Automation Management (XSIAM) dan Extended Detection & Response (XDR)",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 366230802600.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.014",
+    "initiative": "Pengadaan Perpanjangan License Subscription Threat Intelligence Service dan Brand Protection BRI Tahun 2025",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 6732970810.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.007",
+    "initiative": "Pengadaan Perpanjangan License dan Warranty Support Server Elasticsearch CIA 2026",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 6550000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan License dan Warranty Support Server Elasticsearch CIA 2024",
+        "cashout": 171199552.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.005",
+    "initiative": "Pengadaan Renewal Sertifikat SSL dan VMC 2026",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 4106393098.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.001",
+    "initiative": "Pengadaan Penambahan License Luna Client BIFAST BRI Tahun 2026",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "nan",
+    "quarter": "2026",
+    "amount": 2741223000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.016",
+    "initiative": "Pengadaan Perpanjangan Solusi SOAR",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 2500000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Solusi SOAR (Security Orchestration, Automation & Response) 2024",
+        "cashout": 111000000.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan Solusi SOAR (Security Orchestration, Automation & Response) 2024",
+        "cashout": 111000000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.013",
+    "initiative": "Pengadaan Pembelian Lisensi Security Risk Scoring Service",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 1062563040.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.024",
+    "initiative": "Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco 2025",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 1000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco",
+        "cashout": 757276809.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco",
+        "cashout": 48412872.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.004",
+    "initiative": "Pengadaan Renewal Sertifikat SSL dan VMC 2025",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 868562429.0,
+    "currency": "IDR",
+    "status": "Approved",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Renewal Sertifikat SSL dan VMC 2025",
+        "cashout": 655945000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.020",
+    "initiative": "Perpanjangan TLS ATM/CRM NCR Tahun 2025",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 800000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Lisensi TLS untuk ATM dan CRM Merek NCR",
+        "cashout": 241500000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.010",
+    "initiative": "Perpanjangan Lisensi Perangkat Fortigate KCLN Timor Leste, KCLN Taipei, dan KCLN Singapore",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "HBO",
+    "quarter": "2026",
+    "amount": 600000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.025",
+    "initiative": "Perpanjangan Principal Support License, Management Console License, dan Maintenance & Managed Service DDT Blancco 2026",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 500000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.009",
+    "initiative": "Pengadaan Subscription Attack Surface Management 2026",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 143228108.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.008",
+    "initiative": "Pengadaan Perpanjangan License dan Warranty Support Server Elasticsearch CIA 2027",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.017",
+    "initiative": "Pengadaan Renewal Maintenance Privilege Access Management",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Renewal Maintenance Privilege Access Management",
+        "cashout": 3639705882.0
+      },
+      {
+        "nama_spk": "Pengadaan Renewal Maintenance Privilege Access Management",
+        "cashout": 375000000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.12.011",
+    "initiative": "Pembelian License Blancco Disk Erasure",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.022",
+    "initiative": "Renewal VDI",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SPM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.021",
+    "initiative": "Renewal Aqua Security Support & License",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SPM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.029",
+    "initiative": "Implementation Manage File Transfer",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SPM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.019",
+    "initiative": "Perpanjangan Pengadaan Container Security Tahun 2026 - 2027",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.023",
+    "initiative": "Renewal VDI DC-RGN",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.018",
+    "initiative": "Pengadaan Renewal MNV",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "SCR",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.002",
+    "initiative": "Implementasi Extended Security Intelligence and Automation Management (XSIAM) dan Extended Detection & Response (XDR) Fase 2",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "DSE",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.015",
+    "initiative": "Pengadaan Perpanjangan Lisensi Server & Storage Controller FMG-FAZ GTI",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "HBO",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.12.012",
+    "initiative": "Pengadaan License Subscription Deep and Dark Web Monitoring BRI Tahun 2025",
+    "cost_type": "Opex",
+    "domain": "Jasa Berlangganan Software",
+    "owner": "CIA",
+    "quarter": "2026",
+    "amount": 4996919159.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.014",
+    "initiative": "Perpanjangan Lisensi dan Maintenance Active Directory Management Tools 2026 - 2027",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 1025626125.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.012",
+    "initiative": "Pengadaan renewal solusi NGFW bagian dari pengadaan managed service wifi Brilian Tower",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "HBO",
+    "quarter": "2026",
+    "amount": 8000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.011",
+    "initiative": "Perpanjangan Maintenance Server Encryption TLE EDC 2026",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 2476726500.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.007",
+    "initiative": "Pengadaan Perpanjangan Principal Support License dan Maintenance & Managed Service DLP Trellix 2026-2027",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 2500000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.002",
+    "initiative": "Perpanjangan Maintenance HSM Thales Luna BIFAST",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 2476726500.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.008",
+    "initiative": "Trellix DLP on Cloud",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.003",
+    "initiative": "Pengadaan HSM 10K Development di Data Center Tabanan",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.004",
+    "initiative": "Pengadaan HSM di Onshore Data Center (ODC) Sentul",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.005",
+    "initiative": "Perpanjangan Maintenance HSM 10000",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 5342228875.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.006",
+    "initiative": "Perpanjangan Maintenance HSM Thales 10000 Payshield",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 10684457750.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.013",
+    "initiative": "Perpanjangan Maintenance Web Service Bridging Server Autentikasi",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "IAM",
+    "quarter": "2026",
+    "amount": 800000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Perpanjangan WS Bridging Tahap 2",
+        "cashout": 66462202.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.05.010",
+    "initiative": "Perpanjangan Maintenance Server Encryption TLE EDC 2025",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 1238363250.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pemeliharaan Server Enkripsi TLE EDC",
+        "cashout": 355500000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.05.015",
+    "initiative": "Perpanjangan Maintenance & Konsultansi DAST Solutions Tahun 2025-2026",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "VAM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-B.05.001",
+    "initiative": "Perpanjangan Maintenance HSM SafeNet Luna BIFAST",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Pemeliharaan HSM Safenet Luna BIFAST Tahun 2024-2026",
+        "cashout": 88165500.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-B.05.009",
+    "initiative": "Pengadaan Perpanjangan Principal Support License dan Maintenance & Managed Service DLP Trellix",
+    "cost_type": "Opex",
+    "domain": "Pemeliharaan & Perbaikan AT HW SW",
+    "owner": "DSM",
+    "quarter": "2026",
+    "amount": 2794871000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Principal Support License dan Maintenance & Managed Service DLP Trellix",
+        "cashout": 426551355.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.01.001",
+    "initiative": "NAC (Kanpus Wired & BRI Digital)",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 5418979326.0,
+    "currency": "IDR",
+    "status": "Approved",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.002",
+    "initiative": "Pengadaan NGFW untuk Menara BRIPens",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 8932332060.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.003",
+    "initiative": "Enhancement Platform SIEM TBN & RGN",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 124875000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.004",
+    "initiative": "Refreshment Perangkat HSM Swift",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 1395315460.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.005",
+    "initiative": "Pengadaan Solusi NGFW bagian dari Pengadaan Managed Service Wifi BRILian Tower",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 333000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Solusi NGFW bagian dari Pengadaan Managed Service Wifi BRILian Tower",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Solusi NGFW bagian dari Pengadaan Managed Service Wifi BRILian Tower",
+        "cashout": 166500000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.01.006",
+    "initiative": "Enhancement ELK",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 39344498154.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.007",
+    "initiative": "Pengadaan Application Security Testing Kit",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.01.008",
+    "initiative": "Ekspansi Implementasi Network Access Control (NAC) ke Unit Kerja Operasional (UKO) dan Gedung Kantor Pusat Tambahan",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.001",
+    "initiative": "Pengadaan Brand Protection Berbasis Machine Learning",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.002",
+    "initiative": "Pengadaan Platform Security Information & Event Management (SIEM) RGN",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 445114094.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan dan Enhancement Security Information and Event Management (SIEM) DC GTI dan DRC Tabanan Tahun 2023",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan dan Enhancement Security Information and Event Management (SIEM) DC GTI dan DRC Tabanan Tahun 2023",
+        "cashout": 41625000.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan dan Enhancement Security Information and Event Management (SIEM) DC GTI dan DRC Tabanan Tahun 2023",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan dan Enhancement Security Information and Event Management (SIEM) DC GTI dan DRC Tabanan Tahun 2023",
+        "cashout": 41625000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.003",
+    "initiative": "Pengadaan Rubrik Security Cloud (RSC) pada New Cluster Rubrik BRI",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 854700000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Rubrik Security Cloud (RSC) pada New Cluster Rubrik BRI",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Rubrik Security Cloud (RSC) pada New Cluster Rubrik BRI",
+        "cashout": 213675000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.004",
+    "initiative": "Pengadaan Mobile Application Security Komponen 1 Pada Aplikasi BRIMerchant dan BrillianID MFA",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 13500210360.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.005",
+    "initiative": "Pengadaan RASP (Runtime Application Self-Protection) Mobile Application Security",
+    "cost_type": "Capex",
+    "domain": "Hardware Gol.1A",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 29919500000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.006",
+    "initiative": "Pengadaan Active Directory Management Tools",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 65767500.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.007",
+    "initiative": "Pengadaan Platform Security Information & Event Management (SIEM) RGN",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 738000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.008",
+    "initiative": "Pengadaan Platform Security Information & Event Management (SIEM) Elastic TBN",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 870000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.009",
+    "initiative": "Enhancement Domain Name System (DNS) Security",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 2034022759.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.010",
+    "initiative": "Pengadaan Enhancement Secret Management pada CyberArk PAM",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 5186470000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.011",
+    "initiative": "Pengadaan Lisensi Security Support SD-WAN",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.012",
+    "initiative": "Pengadaan Platform Breach Attack Simulation",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 2968500000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.013",
+    "initiative": "Pengadaan Penambahan 14.000 License Data Loss Prevention (DLP) Trellix",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 7375000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.014",
+    "initiative": "Pengadaan License, Support, dan Warranty Network Traffic Analysis Tahun 2025",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 55660210000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Enhancement Perangkat Network Traffic Analysis DC GTI Ragunan BRI Tahun 2024",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Enhancement Perangkat Network Traffic Analysis DC GTI Ragunan BRI Tahun 2024",
+        "cashout": 33333333.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.015",
+    "initiative": "Pengadaan Lisensi Token dan  Maintenance Server Autentikasi",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 15051739107.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.016",
+    "initiative": "Pengadaan Pembelian Lisensi Security Risk Scoring Service",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 2738514744.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.017",
+    "initiative": "Pengadaan License SAST Tahun 2025-2028 (CI/CD pipeline)",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 8780350317.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Perpanjangan Lisensi dan Support Checkmarx CxSAST 2025 - 2028",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan Lisensi dan Support Checkmarx CxSAST 2025 - 2028",
+        "cashout": 172008543.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan Lisensi dan Support Checkmarx CxSAST 2025 - 2028",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Perpanjangan Lisensi dan Support Checkmarx CxSAST 2025 - 2028",
+        "cashout": 608976208.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.018",
+    "initiative": "Pengadaan Lisensi CAPAM dan Maintenance Privilege Access Management",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 5775000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.019",
+    "initiative": "Pengadaan License DAST Solutions",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 5242020000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.020",
+    "initiative": "Pengadaan CAASM (Cyber Asset Attack Surface Management)",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 3222338768.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.021",
+    "initiative": "Bug Bounty Program Tahun 2025 - 2028",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 2808300000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.022",
+    "initiative": "Pengadaan Penambahan Lisensi Identity Access Management (IAM) Platform",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 16785422236.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Identity and Access Management (IAM) Platform",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Identity and Access Management (IAM) Platform",
+        "cashout": 1456875000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.023",
+    "initiative": "Upgrade License HSM Thales Payshield 10000",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 5000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.024",
+    "initiative": "Pengadaan Penambahan Lisensi  Operasional Vulnerability Management 2026",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 4900000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan Penambahan Perpanjangan Lisensi dan Operasional Vulnerability Management 2025",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan Penambahan Perpanjangan Lisensi dan Operasional Vulnerability Management 2025",
+        "cashout": 275000000.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.025",
+    "initiative": "Pengadaan SSL (Secure Socket Layer) Automation",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 8046948000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan",
+    "cashout_entries": [
+      {
+        "nama_spk": "Pengadaan SSL (Secure Socket Layer) Automation",
+        "cashout": 0.0
+      },
+      {
+        "nama_spk": "Pengadaan SSL (Secure Socket Layer) Automation",
+        "cashout": 2101753920.0
+      }
+    ]
+  },
+  {
+    "budget_id": "2026-CIS-A.02.026",
+    "initiative": "Pengadaan Lisensi Anti Ddos",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 2000000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.027",
+    "initiative": "Pengadaan Dashboard Vulnerability Management",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 775000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.028",
+    "initiative": "Implementasi Data Tokenization Tools Fase 2",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 27804359762.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.029",
+    "initiative": "Pengadaan Platform Compliance and Audit Monitoring Tools",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 775000000.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.030",
+    "initiative": "Pengadaan Implementasi API Security",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 9591779019.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.031",
+    "initiative": "Penambahan 14.300 License Data Loss Prevention",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 8627733334.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  },
+  {
+    "budget_id": "2026-CIS-A.02.032",
+    "initiative": "Pengadaan Dark Web dan Cyber Threat Monitoring BRI Tahun 2026",
+    "cost_type": "Capex",
+    "domain": "Software Komp Gol.1",
+    "owner": "CIS",
+    "quarter": "2026",
+    "amount": 0.0,
+    "currency": "IDR",
+    "status": "Planned",
+    "priority": "Medium",
+    "notes": "nan"
+  }
+]
